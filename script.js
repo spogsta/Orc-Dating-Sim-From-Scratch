@@ -24,8 +24,14 @@ function typeWriter(i) {
     }
     else {
      y = 0;
-     document.getElementById('textBox').innerHTML=document.getElementById('textBox').innerHTML + "<button id='nextButton' onclick='pushBtn()'>" + buttons[dialogueCounter] + "</button>";
+     let buttonCounter = 0;
+     while (buttonCounter < buttons[dialogueCounter].length)
+     {
+        document.getElementById('textBox').innerHTML=document.getElementById('textBox').innerHTML + "<button id='nextButton' onclick='pushBtn()'>" + buttons[dialogueCounter][buttonCounter] + "</button>"; //obviously needs to be cleaned up and made into variables, just trying it out
+        buttonCounter++;
+    }
      dialogueCounter ++;
+     buttonCounter = 0;
      
     }
 };
@@ -36,5 +42,20 @@ function pushBtn(){
 }
 
 
-let dialogue = ["well you look like one!", "Man, for an orc you sure talk funny!"]
-let buttons = ["uhh....okay?", "listen...I'm really not an or-"]
+
+
+let dialogue = ["well you look like one!", "Man, for an orc you sure talk funny!", "alright, whatever"]
+let buttons = [["uhh....okay?"], ["listen...I'm really not an or-", "look maybe I am an orc" ,"haha yea I'm totally an orc"],["okay test", "what?"]]
+let check = [[],[0,0,1],[]]//ad checks
+let affinity = []
+
+//let buttons = [["uhh....okay?", "You know it", "yeah","ME ORC!"]]
+
+
+
+//dialogue button characteristics- shy stammering nerd, giga chad asshole, normal, ORC
+
+//so this is going to be really ghetto- I could totally make a function to constantly 
+
+
+//i'm really considering hand coding all dialogue through continued typwritter functions - I have automated making tasks-but it actually becomes just as convuluted through like 5-6 checks and branching paths end up happening which end up messing things up even more. I know it looks goofy but it makes more sense for me to just hand write everything with a simple copy paste.  

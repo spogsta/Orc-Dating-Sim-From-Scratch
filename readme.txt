@@ -11,3 +11,5 @@ create dialogue
 create characters
 create a clean system for dialogue - include possibility for dialogue forks and affinity checks
     -I have a few ideas for this, one could just be a branching tree of dialogues re-creating buttons and adding certain points to certain variables depending on dialogue choice- with if checks dependent on those variables for special dialogues or actions)
+
+i'm really considering hand coding all dialogue through continued typwritter functions - I have automated making tasks-but it actually becomes just as convuluted through like 5-6 checks and branching paths end up happening which end up messing things up even more. I know it looks goofy but it makes more sense for me to just hand write everything with a simple copy paste.

@@ -2,6 +2,7 @@
 let i = "";
 let y = 0;
 let dialogueCounter = 0;
+let affinity = 0;//orc affinity toward player
 
 let speed = 50;
 
@@ -46,8 +47,10 @@ function pushBtn(){
 
 let dialogue = ["well you look like one!", "Man, for an orc you sure talk funny!", "alright, whatever"]
 let buttons = [["uhh....okay?"], ["listen...I'm really not an or-", "look maybe I am an orc" ,"haha yea I'm totally an orc"],["okay test", "what?"]]
-let check = [[],[0,0,1],[]]//ad checks
-let affinity = []
+let check = [[],[0,0,1],[]]//ad checks-will trigger check dialogue
+let checkDialogue = []//will check an affinity-and trigger a dialogue if at a certain affinity at a certain dialogue point and override a current dialogue
+let checkButtons = []//same with check affinity but will provide a button and override current bttsn
+
 
 //let buttons = [["uhh....okay?", "You know it", "yeah","ME ORC!"]]
 
